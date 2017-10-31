@@ -1,4 +1,4 @@
-FROM 
+FROM atlas/atlas_external_cvmfs
 LABEL maintainer="Stewart Martin-Haugh <smh@cern.ch>"
 
 USER root
