@@ -2,6 +2,7 @@ FROM atlas/atlas_external_cvmfs
 LABEL maintainer="Stewart Martin-Haugh <smh@cern.ch>"
 
 USER root
+RUN sudo yum update
 RUN sudo yum install -y svn libuuid-devel ctags texi2html texinfo
 RUN sudo yum install -y alsa-lib \
                         alsa-lib-devel \
