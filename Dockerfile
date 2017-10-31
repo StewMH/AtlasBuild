@@ -2,85 +2,85 @@ FROM
 LABEL maintainer="Stewart Martin-Haugh <smh@cern.ch>"
 
 USER root
-RUN sudo yum install svn libuuid-devel ctags texi2html texinfo
-RUN sudo yum install alsa-lib
-RUN sudo yum install alsa-lib-devel
-RUN sudo yum install autoconf
-RUN sudo yum install automake
-RUN sudo yum install bzip2-devel
-RUN sudo yum install compat-db
-RUN sudo yum install compat-db42
-RUN sudo yum install compat-db43
-RUN sudo yum install compat-expat1
-RUN sudo yum install compat-glibc
-RUN sudo yum install compat-glibc-headers
-RUN sudo yum install compat-libf2c-34
-RUN sudo yum install compat-libgfortran-41
-RUN sudo yum install compat-libstdc++-33
-RUN sudo yum install compat-libtermcap
-RUN sudo yum install compat-openldap
-RUN sudo yum install compat-readline5
-RUN sudo yum install dbus-devel
-RUN sudo yum install device-mapper
-RUN sudo yum install e2fsprogs-libs
-RUN sudo yum install gcc-c++
-RUN sudo yum install giflib
-RUN sudo yum install glib-devel
-RUN sudo yum install glib2-devel
-RUN sudo yum install glibmm24
-RUN sudo yum install gperf
-RUN sudo yum install krb5-devel
-RUN sudo yum install libXScrnSaver
-RUN sudo yum install libXScrnSaver-devel
-RUN sudo yum install libXcomposite
-RUN sudo yum install libXcomposite-devel
-RUN sudo yum install libXcursor
-RUN sudo yum install libXcursor-devel
-RUN sudo yum install libXdamage
-RUN sudo yum install libXdamage-devel
-RUN sudo yum install libXdmcp
-RUN sudo yum install libXdmcp-devel
-RUN sudo yum install libXfixes
-RUN sudo yum install libXfixes-devel
-RUN sudo yum install libXi
-RUN sudo yum install libXi-devel
-RUN sudo yum install libXinerama
-RUN sudo yum install libXmu
-RUN sudo yum install libXrandr
-RUN sudo yum install libXrandr-devel
-RUN sudo yum install libXtst
-RUN sudo yum install libXtst-devel
-RUN sudo yum install libXxf86vm
-RUN sudo yum install libXxf86vm-devel
-RUN sudo yum install libaio
-RUN sudo yum install libcap-devel
-RUN sudo yum install libcap-ng-devel
-RUN sudo yum install libdrm-devel
-RUN sudo yum install libpng-devel
-RUN sudo yum install libsigc++20
-RUN sudo yum install libtool
-RUN sudo yum install libtool-ltdl
-RUN sudo yum install libxshmfence
-RUN sudo yum install libxslt
-RUN sudo yum install mesa-dri-drivers
-RUN sudo yum install mesa-dri-filesystem
-RUN sudo yum install mesa-dri1-drivers
-RUN sudo yum install mesa-libEGL
-RUN sudo yum install mesa-libEGL-devel
-RUN sudo yum install mesa-libGL
-RUN sudo yum install mesa-libGL-devel
-RUN sudo yum install mesa-libGLU
-RUN sudo yum install mesa-libGLU-devel
-RUN sudo yum install ncurses-devel
-RUN sudo yum install openmotif
-RUN sudo yum install openmotif22
-RUN sudo yum install openssl098e
-RUN sudo yum install pciutils
-RUN sudo yum install pciutils-devel
-RUN sudo yum install perl-ExtUtils-Embed
-RUN sudo yum install tk
-RUN sudo yum install xcb-proto
-RUN sudo yum install xkeyboard-config
-RUN sudo yum install xorg-x11-xtrans-devel
-RUN sudo yum install zsh
+RUN sudo yum install -y svn libuuid-devel ctags texi2html texinfo
+RUN sudo yum install -y alsa-lib \
+                        alsa-lib-devel \
+                        autoconf \
+                        automake \
+                        bzip2-devel \
+                        compat-db \
+                        compat-db42 \
+                        compat-db43 \
+                        compat-expat1 \
+                        compat-glibc \
+                        compat-glibc-headers \
+                        compat-libf2c-34 \
+                        compat-libgfortran-41 \
+                        compat-libstdc++-33 \
+                        compat-libtermcap \
+                        compat-openldap \
+                        compat-readline5 \
+                        dbus-devel \
+                        device-mapper \
+                        e2fsprogs-libs \
+                        gcc-c++ \
+                        giflib \
+                        glib-devel \
+                        glib2-devel \
+                        glibmm24 \
+                        gperf \
+                        krb5-devel \
+                        libXScrnSaver \
+                        libXScrnSaver-devel \
+                        libXcomposite \
+                        libXcomposite-devel \
+                        libXcursor \
+                        libXcursor-devel \
+                        libXdamage \
+                        libXdamage-devel \
+                        libXdmcp \
+                        libXdmcp-devel \
+                        libXfixes \
+                        libXfixes-devel \
+                        libXi \
+                        libXi-devel \
+                        libXinerama \
+                        libXmu \
+                        libXrandr \
+                        libXrandr-devel \
+                        libXtst \
+                        libXtst-devel \
+                        libXxf86vm \
+                        libXxf86vm-devel \
+                        libaio \
+                        libcap-devel \
+                        libcap-ng-devel \
+                        libdrm-devel \
+                        libpng-devel \
+                        libsigc++20 \
+                        libtool \
+                        libtool-ltdl \
+                        libxshmfence \
+                        libxslt \
+                        mesa-dri-drivers \
+                        mesa-dri-filesystem \
+                        mesa-dri1-drivers \
+                        mesa-libEGL \
+                        mesa-libEGL-devel \
+                        mesa-libGL \
+                        mesa-libGL-devel \
+                        mesa-libGLU \
+                        mesa-libGLU-devel \
+                        ncurses-devel \
+                        openmotif \
+                        openmotif22 \
+                        openssl098e \
+                        pciutils \
+                        pciutils-devel \
+                        perl-ExtUtils-Embed \
+                        tk \
+                        xcb-proto \
+                        xkeyboard-config \
+                        xorg-x11-xtrans-devel \
+                        zsh \
 
