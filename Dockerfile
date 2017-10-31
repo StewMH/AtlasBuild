@@ -82,5 +82,5 @@ RUN sudo yum install -y alsa-lib \
                         xcb-proto \
                         xkeyboard-config \
                         xorg-x11-xtrans-devel \
-                        zsh \
+                        zsh 
 
