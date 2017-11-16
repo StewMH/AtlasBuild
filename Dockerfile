@@ -84,4 +84,5 @@ RUN sudo yum install -y alsa-lib \
                         xkeyboard-config \
                         xorg-x11-xtrans-devel \
                         zsh 
+RUN sudo yum install -y curl-devel
 
